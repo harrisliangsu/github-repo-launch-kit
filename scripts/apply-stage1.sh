@@ -123,4 +123,6 @@ echo "  · README 首屏 GIF / 截图 —— 你录"
 echo "  · Repository social preview 图 —— 你在 Settings → Social preview 上传"
 echo "  · 引爆文 —— 参考 templates/launch-post.md"
 echo
-[[ $APPLY -eq 0 ]] && echo "（这是 dry-run，加 --apply 真正落盘和调 gh）"
+if [[ $APPLY -eq 0 ]]; then
+  echo "（这是 dry-run，加 --apply 真正落盘和调 gh）"
+fi
