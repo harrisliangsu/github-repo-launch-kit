@@ -1,9 +1,9 @@
-# oss-launch-kit
+# github-repo-launch-kit
 
 > 一个 Claude Code skill：把 GitHub 仓库从「写完了」推到「能被陌生人 star」的标准流程。
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Skill: oss-launch-kit](https://img.shields.io/badge/skill-oss--launch--kit-purple.svg)](SKILL.md)
+[![Skill: github-repo-launch-kit](https://img.shields.io/badge/skill-github--repo--launch--kit-purple.svg)](SKILL.md)
 [![Platform: macOS | Linux](https://img.shields.io/badge/platform-macOS%20%7C%20Linux-lightgrey.svg)](#dependencies)
 
 ## 这是什么
@@ -20,11 +20,11 @@
 ## 安装
 
 ```bash
-git clone <this-repo> ~/Dev/repo/oss-launch-kit
-~/Dev/repo/oss-launch-kit/install.sh
+git clone <this-repo> ~/Dev/repo/github-repo-launch-kit
+~/Dev/repo/github-repo-launch-kit/install.sh
 ```
 
-`install.sh` 会把仓库软链到 `~/.claude/skills/oss-launch-kit`，Claude Code 自动发现。
+`install.sh` 会把仓库软链到 `~/.claude/skills/github-repo-launch-kit`，Claude Code 自动发现。
 
 ## 在 Claude Code 里怎么用
 
@@ -33,7 +33,7 @@ git clone <this-repo> ~/Dev/repo/oss-launch-kit
 - 让仓库火 / 让 github 项目更受欢迎
 - github 冷启动 / 上架前清单 / 开源运营
 - 我刚开源了一个仓库，下一步做什么
-- make my repo popular / launch open source project / OSS launch checklist
+- make my repo popular / launch open source project / github launch checklist / github repo launch
 
 Claude 会先勘查仓库现状（description / topics / Discussions / README badge / CONTRIBUTING 是否存在），判断你处在 4 个阶段中的哪一段，再给出对应建议。
 
@@ -43,7 +43,7 @@ Claude 会先勘查仓库现状（description / topics / Discussions / README ba
 
 ```bash
 cd <你的目标仓库>
-~/.claude/skills/oss-launch-kit/scripts/apply-stage1.sh \
+~/.claude/skills/github-repo-launch-kit/scripts/apply-stage1.sh \
     --repo owner/repo \
     --description "Hands-on …" \
     --topics "llm,fine-tuning,lora" \
@@ -56,7 +56,7 @@ cd <你的目标仓库>
 ## 目录结构
 
 ```
-oss-launch-kit/
+github-repo-launch-kit/
 ├── SKILL.md                          # Claude 加载的主文件（frontmatter + 流程）
 ├── README.md                         # 你正在看的这个
 ├── LICENSE                           # MIT

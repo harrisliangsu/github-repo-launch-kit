@@ -1,12 +1,12 @@
 ---
-name: oss-launch-kit
+name: github-repo-launch-kit
 description: |
-  开源仓库冷启动与传播工具包。把一个 GitHub 仓库从「写完了」推到「能被陌生人 star」，
+  GitHub 开源仓库冷启动与传播工具包。把一个 GitHub 仓库从「写完了」推到「能被陌生人 star」，
   四阶段流程：上架前信任信号 → 差异化打磨 → 冷启动传播 → 持续运营。明确区分
   AI 直接能做的部分和必须人工做的部分。Use when asked to "让仓库火"、
   "怎么让 github 项目更受欢迎"、"开源项目运营"、"github 冷启动"、"上架前清单"、
-  "make my repo popular"、"launch open source project"、"open source go-to-market"、
-  "OSS launch checklist". 也在用户刚 push 完一个新公开仓库、问「接下来该做什么」时主动建议。
+  "make my repo popular"、"launch open source project"、"github launch checklist"、
+  "github repo launch". 也在用户刚 push 完一个新公开仓库、问「接下来该做什么」时主动建议。
 version: 0.1.0
 allowed-tools:
   - Bash
@@ -17,7 +17,7 @@ allowed-tools:
   - Grep
 ---
 
-# OSS Launch Kit
+# GitHub Repo Launch Kit
 
 把一个 GitHub 仓库从「代码写完」推到「陌生人愿意 star」的标准操作流程。
 

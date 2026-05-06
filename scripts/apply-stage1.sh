@@ -3,7 +3,7 @@
 #
 # 用法：
 #   cd <目标仓库>
-#   ~/.claude/skills/oss-launch-kit/scripts/apply-stage1.sh \
+#   ~/.claude/skills/github-repo-launch-kit/scripts/apply-stage1.sh \
 #       --repo owner/repo \
 #       --description "Hands-on …" \
 #       --topics "llm,fine-tuning,lora,peft,sft" \
@@ -47,7 +47,7 @@ done
 ACTION="dry-run"
 [[ $APPLY -eq 1 ]] && ACTION="apply"
 
-echo "=== oss-launch-kit · stage 1 (${ACTION}) ==="
+echo "=== github-repo-launch-kit · stage 1 (${ACTION}) ==="
 echo "repo:           ${REPO:-<未指定>}"
 echo "description:    ${DESCRIPTION:-<未指定>}"
 echo "topics:         ${TOPICS:-<未指定>}"
