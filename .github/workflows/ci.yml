@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  shell-lint:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: bash -n (syntax check)
+        run: |
+          set -e
+          for f in install.sh scripts/*.sh; do
+            echo "checking $f"
+            bash -n "$f"
+          done
+
+      - name: shellcheck
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y shellcheck
+          shellcheck install.sh scripts/*.sh
+
+      - name: SKILL.md frontmatter present
+        run: |
+          head -1 SKILL.md | grep -q '^---$'
+          grep -q '^name:' SKILL.md
+          grep -q '^description:' SKILL.md

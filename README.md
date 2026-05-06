@@ -20,7 +20,7 @@
 ## 安装
 
 ```bash
-git clone <this-repo> ~/Dev/repo/github-repo-launch-kit
+git clone https://github.com/harrisliangsu/github-repo-launch-kit.git ~/Dev/repo/github-repo-launch-kit
 ~/Dev/repo/github-repo-launch-kit/install.sh
 ```
 
